@@ -20,14 +20,10 @@ public class SchoolService {
     public SchoolDto create(SchoolDto dto){
         var school = schoolMapper.toSchool(dto);
         schoolRepository.save(school);
-        return dto;  //input and return value same type so we can do it
+        return dto; 
     }
 
     @GetMapping("/schoolsdto")
-    //Step 1: Fetch all schools from the database, findAll
-    //Step 2: Convert the list of schools into a stream, .stream
-    //Step 3: Transform each School object into a SchoolDto object, .map
-    //Step 4: Collect the transformed objects into a list, .collect
     public List<SchoolDto> findAllSt(){
         return schoolRepository.findAll()
                 .stream()
