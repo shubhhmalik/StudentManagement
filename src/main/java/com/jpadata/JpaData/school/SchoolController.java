@@ -15,19 +15,6 @@ public class SchoolController {
         this.schoolService = schoolService;
     }
 
-//    private final SchoolRepository schoolRepository;
-//    @PostMapping("/schools")
-//    public School create(@RequestBody School schools){
-//        var school = toSchool(schools);
-//        schoolRepository.save(school);
-//        return school;
-//    }
-//    }
-//    @GetMapping("/schools")
-//    public List<School> findAll(){
-//        return schoolRepository.findAll();
-//    }
-
 
     //dto rep
     @PostMapping("/schoolsdto")
