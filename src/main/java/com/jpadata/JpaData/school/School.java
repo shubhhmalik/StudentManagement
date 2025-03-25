@@ -41,7 +41,7 @@ public class School {
     @OneToMany(
             mappedBy = "school"
     )
-    @JsonManagedReference  //this shows school is parent and above, to avoid infinite recursion loop
+    @JsonManagedReference  //to avoid infinite recursion loop
     private List<Student> students;
 
     public List<Student> getStudents() {
