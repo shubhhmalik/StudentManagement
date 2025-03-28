@@ -25,7 +25,7 @@ public class Student {
     private int age;
 
 
-    //empty constructor to make our class an entity
+    //empty constructor 
     public Student(){
 
     }
